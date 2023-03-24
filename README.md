@@ -1,2 +1,2 @@
 # My-Portfolio
- my Front End Web Developer Portfolio
+ My Front End Web Developer Portfolio
