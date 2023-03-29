@@ -175,7 +175,7 @@ p {
 .sidebar ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 2em;
+    font-size: 1.5em;
     margin: 10px 0;
     font-weight: 300;
     letter-spacing: 2px;
@@ -271,8 +271,12 @@ p {
 /* about section */
 
 .about {
-    background: #000;
-    
+    /* background-color: #000; */
+    background-image: url(red-tie.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: sticky;
 }
 
 .about .content {
@@ -288,16 +292,18 @@ p {
 
 .about .content .textBx p {
     color: #fff;
+    margin: 20px;
+    pointer-events: none;
 }
 
 .about .content .imgBx {
     margin-left: 40px;
 }
 
-.about .content .imgBx img {
+/* .about .content .imgBx img {
     max-width: 100%;
     margin: 24px;
-}
+} */
 
 /* Services section */
 
@@ -588,6 +594,8 @@ p {
         padding: 40px;
         background: #000 url(wall.jpg);
         background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
       }
     
      /* .float .box {
@@ -1346,7 +1354,7 @@ a.social:nth-child(1)
     width: 120%;
     opacity: .8;
     background-color: #fff700;
-    transition: 4s;
+    transition: 1s;
 }
 
 .box-4:hover .btn-f::before {
@@ -1611,7 +1619,7 @@ position: absolute;
 .box-7:hover .btn-f::before {
     width: 120%;
     opacity: .8;
-    background-color: #fff700;
+    background-color: #747471;
     transition: 0.7s;
 }
 
@@ -1683,7 +1691,7 @@ position: absolute;
 }
 
 .box-7 .btn-f {
-    border: 4px solid #fff700;
+    border: 4px solid #747471;
     color: #fff;
     font-size: 22px;
     text-align: right;
@@ -1693,7 +1701,7 @@ position: absolute;
 
 .box-7 .btn-f::after {
     content: "";
-    background-color: #fff700;
+    background-color: #747471;
     top: -85px
 }
 
@@ -1800,7 +1808,7 @@ position: absolute;
 }
 
 .box-7 .btn-f div::before {
-    content: 'Git Bash';
+    content: 'Linux-cli';
     position: relative;
     top: -44px;
     left: -9px;
@@ -1811,7 +1819,7 @@ position: absolute;
 }
 
 .box-7:hover .btn-f div::before {
-    color: #343131;
+    color: #fff;
 }
 
 .box-8 .btn-f div::before {
@@ -2499,10 +2507,10 @@ p
             transition: none;
         }
 
-        .about .content .imgBx img {
+        /* .about .content .imgBx img {
             margin: auto;
             padding: 20px;
-          }
+          } */
           
           .neon-container
            {
@@ -2624,3 +2632,124 @@ p
   }
   
 
+/* ........FEEDBACK....EDIT.......  */
+
+@media screen and (max-width: 400px)
+{
+    .logoText 
+    {
+        display: none;
+    }
+
+    .banner .contentBx h4 
+    {
+        font-size: 1em;
+    }
+    .banner .contentBx h2
+    {
+        font-size: 2em;
+    }
+    
+    p 
+    {
+        font-size: 0.8em;
+    }
+
+    .btn-8 
+    {
+        font-size: 12px;
+    }
+    #btn-Cme
+    {
+        font-size: 12px;
+    }
+
+}
+
+
+/* GLow border about section */
+
+/* .block {
+    position: relative;
+    margin: 10% auto 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(0deg , black, rgb(44, 44, 44, 0.8));
+    background: #000;
+}
+
+.glow::before , .glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg , #e6fb04 , #ff6600 , #00ff66 , #00ffff , #ff00ff , #ff0099 , #6e0dd0 , #ff3300 , #099fff);
+    background-size: 400%;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow::after {
+    filter: blur(40px);
+    opacity: 1;
+} */
+
+.block {
+    position: relative;
+    margin: auto ;
+    width: 75%;
+    height: 100%;
+    background: linear-gradient(0deg , black, rgb(44, 44, 44, 0.8));
+    /* background-color: #000; */
+  }
+  
+  .glow::before , .glow::after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(45deg , #e6fb04 , #ff6600 , #00ff66 , #00ffff , #ff00ff , #ff0099 , #6e0dd0 , #ff3300 , #099fff);
+    background-size: 400%;
+    width: calc(100% + 5px);
+    height: calc(100% + 5px);
+    z-index: -1;
+    animation: animate 20s linear infinite;
+  }
+  
+  @keyframes animate {
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+  }
+  
+  .glow::after {
+    filter: blur(40px);
+    opacity: 1;
+  }
+
+  .about .content .textBx {
+    min-width: 100%;
+    width: 100%;
+  }
+
+ 
