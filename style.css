@@ -606,7 +606,7 @@ p {
      } */
 
      .banner .contentBx {
-        display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -2752,4 +2752,11 @@ p
     width: 100%;
   }
 
- 
+ /* change banner image */
+
+ #home {
+    background-image: url(wall.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+ }
